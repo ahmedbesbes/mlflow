@@ -26,7 +26,7 @@ To execute the code:
 pip install pipenv
 ```
 
-- Clone the projet
+- Clone the project
 
 ```bash
 git clone git@github.com:ahmedbesbes/mlflow.git
