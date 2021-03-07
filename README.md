@@ -1,4 +1,4 @@
-### How to use MLflow to optimize your model lifecycle ?
+### How to use MLflow to simplify the Machine Learning lifecycle
 
 ![](./images/mlflow.png)
 
