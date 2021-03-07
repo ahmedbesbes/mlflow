@@ -14,7 +14,7 @@ In this repo, I experiment with MLflow to:
 
 - compare different runs between each other
 - set up a tracking server locally and on AWS
-- deploy the your best model using MLflow Models
+- deploy the your model using MLflow Models
 
 ### Quickstart locally
 
@@ -45,17 +45,19 @@ pipenv install .
 mlflow ui
 ```
 
-- Launch the training
+- Launch the training (or whatever code that logs to MLflow)
 
 ```bash
 python train.py
 ```
 
-- Visit http://localhost:5000 to check the runs on MLflow ui
+- Visit http://localhost:5000 to check the runs on the MLflow ui
 
 ![](./images/runs.png)
 
 ### Launch a tracking server on AWS
+
+If you're a team of developers or data scientists, you can spin up a tracking server where everyone logs his/her runs
 
 #### 1. Prepare an EC2 machine and an S3 bucket
 
