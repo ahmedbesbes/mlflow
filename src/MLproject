@@ -1,0 +1,11 @@
+name: hr_analytics
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: int
+    
+    command: "python train.py {n_estimators} {balanced}"
+

@@ -8,6 +8,7 @@ mlflow = "*"
 jupyter = "*"
 matplotlib = "*"
 scikit-learn = "*"
+tqdm = "*"
 
 [dev-packages]
 
