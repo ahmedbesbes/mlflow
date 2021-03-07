@@ -1,4 +1,4 @@
-### How to use MLflow to simplify the Machine Learning lifecycle
+### How to use MLflow to manage the Machine Learning lifecycle
 
 ![](./images/mlflow.png)
 
