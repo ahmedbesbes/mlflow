@@ -103,7 +103,7 @@ python train.py
                 --default-artifact-root s3://mlflow-artifact-store-demo
   ```
 
-#### 2. Change your local code and configuration
+#### 2. Set AWS credentials and change the tracking URI and
 
 - set the AWS credentials as environment variables so that the code uploads artifacts to the s3 bucket
 
@@ -130,5 +130,5 @@ In fact, these artifacts are effectively on S3.
 
 ### Slides
 
-- French version
-- English version
+- French [version](https://docs.google.com/presentation/d/1wAZnpVB9tINqZVrMP0Am3BwBgZrFRosgyIzhZ9p9In4/edit?usp=sharing)
+- English version (coming soon)
