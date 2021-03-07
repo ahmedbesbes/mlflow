@@ -2,9 +2,9 @@
 
 ![](./images/mlflow.png)
 
-In this repo, I'll show you how to use MLflow to:
+In this repo, I experiment with MLflow to:
 
-- track your machine learning experiments based on:
+- track machine learning experiments based on:
 
   - metrics
   - hyper-parameters
@@ -18,7 +18,9 @@ In this repo, I'll show you how to use MLflow to:
 
 ### Quickstart
 
-- Install pipenv to run a virtual environment with mlflow
+To execute the code:
+
+- Install pipenv to run a virtual environment with mlflow (it's cleaner this way)
 
 ```bash
 pip install pipenv
@@ -50,6 +52,8 @@ python train.py
 ```
 
 - Visit http://localhost:5000 to check the runs on MLflow ui
+
+![](./images/runs.png)
 
 ### Slides
 
