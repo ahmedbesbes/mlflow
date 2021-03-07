@@ -9,6 +9,7 @@ jupyter = "*"
 matplotlib = "*"
 scikit-learn = "*"
 tqdm = "*"
+boto3 = "*"
 
 [dev-packages]
 

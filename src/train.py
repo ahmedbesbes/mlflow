@@ -21,7 +21,15 @@ import mlflow.sklearn
 
 # set registry URI i.e. where MLflow saves runs
 
-mlflow.set_tracking_uri("file:///Users/ahmed.besbes/projects/mlflow/mlruns")
+# mlflow.set_tracking_uri("file:///Users/ahmed.besbes/projects/mlflow/mlruns")
+
+
+mlflow.set_tracking_uri(
+    "http://ec2-35-180-45-108.eu-west-3.compute.amazonaws.com:5000/"
+)
+
+
+# print("artifact store : ", mlflow.get_artifact_uri())
 
 # load data
 data = pd.read_csv("./../data/aug_train.csv")
@@ -59,10 +67,11 @@ x_train, x_test, y_train, y_test = train_test_split(
     random_state=2021,
     stratify=targets.values,
 )
-
 alpha = sys.argv[0] if len(sys.argv) > 1 else 0.5
 
-experiment_id = mlflow.create_experiment("training experiment")
+
+# experiment_id = mlflow.create_experiment("training experiment")
+experiment_id = mlflow.set_experiment("training experiment")
 
 
 n_estimators_range = np.arange(100, 500, 25)
